@@ -16,9 +16,9 @@ const About = () => {
             <AbsoluteCenter w="80%">
                 <Text as='h2' fontSize={ headingFontSize } color='cyan.400' whiteSpace='nowrap'>About Me</Text>
                 <Text fontSize={ paragraphFontSize } color='white'>
-                    I am an undergraduate Computer Science student at Ontario Tech University. I have a passion for creating websites,
+                    I am an undergraduate Computer Science student at Ontario Tech University. I have a passion for creating websites and apps,
                     whether it's for fun and games, simplifying and automating tasks, or promoting a company's products and services.
-                    Making websites allow me to combine my creativity and problem-solving skills to create unique and innovative solutions.
+                    Making websites and apps allow me to combine my creativity and problem-solving skills to create unique and innovative solutions.
                 </Text>
                 <br></br>
                 <br></br>

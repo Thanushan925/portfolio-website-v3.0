@@ -32,7 +32,7 @@ const Projects = () => {
                     <Card overflow='hidden' variant='outline' borderColor='cyan.400' bg='#212121' m='1'>
                         <Stack>
                             <CardBody>
-                                <Text fontSize={ secondHeadingFontSize } color='cyan.400'>Crypto Tracker</Text>
+                                <Text fontSize={ secondHeadingFontSize } color='cyan.400'>Weather Tracker</Text>
                                 <Text fontSize={ paragraphFontSize } color='white' py='2'>
                                     Leveraging CoinGecko's API, this app provides real-time data on 50 cryptocurrencies,
                                     including current prices, market capitalization, trading volumes, and percentage changes,
@@ -48,7 +48,7 @@ const Projects = () => {
                     <Card overflow='hidden' variant='outline' borderColor='cyan.400' bg='#212121' m='1'>
                         <Stack>
                             <CardBody>
-                                <Text fontSize={ secondHeadingFontSize } color='cyan.400'>Crypto Tracker</Text>
+                                <Text fontSize={ secondHeadingFontSize } color='cyan.400'>Pokemon Battle Game</Text>
                                 <Text fontSize={ paragraphFontSize } color='white' py='2'>
                                     Leveraging CoinGecko's API, this app provides real-time data on 50 cryptocurrencies,
                                     including current prices, market capitalization, trading volumes, and percentage changes,

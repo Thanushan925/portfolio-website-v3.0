@@ -36,7 +36,7 @@ const Home = () => {
                 <Text fontSize={ textFontSize } color='whiteAlpha.500'>Hi there, I'm</Text>
                 <Text as='h1' fontSize={ titleFontSize } color='cyan.400' whiteSpace='nowrap'>Thanushan Satheeskumar</Text>
                 <Progress size='xs' isIndeterminate colorScheme='cyan' bg='#212121'/>
-                <Text fontSize={ subtitleFontSize } color='white'>{ displayedText }</Text>
+                <Text className='spaceMonoFont' fontSize={ subtitleFontSize } color='white' whiteSpace='nowrap'>{ displayedText }</Text>
             </AbsoluteCenter>
         </Box>
     )

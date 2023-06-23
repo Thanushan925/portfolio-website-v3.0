@@ -3,11 +3,11 @@ import { useBreakpointValue, Box, AbsoluteCenter, Text, Progress } from '@chakra
 
 const Home = () => {
     // The following will be changing the sizes of the fonts based on the screen sizes
-    const titleFontSize = useBreakpointValue({ base: '2xl', sm: '3xl', md: '5xl', lg: '7xl' });
+    const titleFontSize = useBreakpointValue({ base: '3xl', sm: '4xl', md: '6xl', lg: '7xl' });
     const subtitleFontSize = useBreakpointValue({ base: 'md', sm: 'lg', md: '2xl', lg: '4xl' });
     const textFontSize = useBreakpointValue({ base: 'sm', sm: 'md', md: 'xl', lg: '3xl' });
 
-    // The following will carry out the 'Typing Effect' for the subtitle
+    // Used to carry out the 'Typing Effect' for the subtitle
     const [displayedText, setDisplayedText] = useState('');
     const subtitleText = 'Aspiring Software/Web Developer';
 
@@ -31,7 +31,7 @@ const Home = () => {
     }, [displayedText, subtitleText]);
 
     return (
-        <Box position='relative' height='800px'>
+        <Box id='home' position='relative' height='750px'>
             <AbsoluteCenter>
                 <Text fontSize={ textFontSize } color='whiteAlpha.500'>Hi there, I'm</Text>
                 <Text as='h1' fontSize={ titleFontSize } color='cyan.400' whiteSpace='nowrap'>Thanushan Satheeskumar</Text>

@@ -5,14 +5,14 @@ import { SiHtml5, SiCss3, SiJavascript, SiReact, SiBootstrap, SiChakraui, SiTail
 import { FaJava } from "react-icons/fa"
 
 const About = () => {
-    // The following will be changing the sizes of the fonts based on the screen sizes
-    const headingFontSize = useBreakpointValue({ base: 'lg', sm: 'xl', md: '3xl', lg: '5xl' });
-    const secondHeadingFontSize = useBreakpointValue({ base: 'md', sm: 'lg', md: '2xl', lg: '4xl' });
-    const paragraphFontSize = useBreakpointValue({ base: 'xs', sm: 'sm', md: 'lg', lg: '2xl' });
+    // Used to change the sizes of the fonts based on the screen sizes
+    const headingFontSize = useBreakpointValue({ base: '2xl', sm: '3xl', md: '5xl', lg: '6xl' });
+    const secondHeadingFontSize = useBreakpointValue({ base: 'xl', sm: '2xl', md: '4xl', lg: '5xl' });
+    const paragraphFontSize = useBreakpointValue({ base: 'sm', sm: 'md', md: 'lg', lg: '2xl' });
     const listFontSize = useBreakpointValue({ base: 'sm', sm: 'md'});
 
     return (
-        <Box position='relative' h='1000px'>
+        <Box id='about' position='relative' h='1000px'>
             <AbsoluteCenter w="80%">
                 <Text as='h2' fontSize={ headingFontSize } color='cyan.400' whiteSpace='nowrap'>About Me</Text>
                 <Text fontSize={ paragraphFontSize } color='white'>

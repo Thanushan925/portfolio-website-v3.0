@@ -1,6 +1,5 @@
 import React from 'react'
 import { useBreakpointValue, Box, AbsoluteCenter, Center, Text, Flex, Stack, Button, Link, Card, CardBody, CardFooter } from '@chakra-ui/react'
-import { SiBitcoin } from "react-icons/si"
 
 const Projects = () => {
     // The following will be changing the sizes of the fonts based on the screen sizes
@@ -34,9 +33,9 @@ const Projects = () => {
                             <CardBody>
                                 <Text fontSize={ secondHeadingFontSize } color='cyan.400'>Weather Tracker</Text>
                                 <Text fontSize={ paragraphFontSize } color='white' py='2'>
-                                    Leveraging CoinGecko's API, this app provides real-time data on 50 cryptocurrencies,
-                                    including current prices, market capitalization, trading volumes, and percentage changes,
-                                    keeping users informed and up-to-date.
+                                Stay informed and prepared with our Weather Tracker, powered by the OpenWeatherMap API,
+                                providing real-time temperature, forecasts, humidity, wind speeds, and more for any location
+                                you desire.
                                 </Text>
                             </CardBody>
                             <CardFooter>
@@ -50,9 +49,9 @@ const Projects = () => {
                             <CardBody>
                                 <Text fontSize={ secondHeadingFontSize } color='cyan.400'>Pokémon Battle Game</Text>
                                 <Text fontSize={ paragraphFontSize } color='white' py='2'>
-                                    Leveraging CoinGecko's API, this app provides real-time data on 50 cryptocurrencies,
-                                    including current prices, market capitalization, trading volumes, and percentage changes,
-                                    keeping users informed and up-to-date.
+                                    Experience the text-based Pokemon Battle Game featuring a short story and gameplay with
+                                    fighting moves, items, and mega evolution. It also has type advantages and resistances,
+                                    with an ultimate boss fight ending.
                                 </Text>
                             </CardBody>
                             <CardFooter>

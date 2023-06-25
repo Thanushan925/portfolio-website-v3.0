@@ -125,7 +125,7 @@ const About = () => {
                         <Center>
                             <GridItem>
                                 <Center><Icon as={ SiGo } color='#007D9C' w='16' h='16' /></Center>
-                                <Center><Text color='white'>GO</Text></Center>
+                                <Center><Text color='white'>Go</Text></Center>
                             </GridItem>
                         </Center>
                     </Grid>
@@ -193,7 +193,7 @@ const About = () => {
                             </GridItem>
                         </Center>
                         <GridItem>
-                            <Text fontSize={ listFontSize } color='white'>C++, Java, Python, C, GO</Text>
+                            <Text fontSize={ listFontSize } color='white'>C++, Java, Python, C, Go</Text>
                         </GridItem>
                     </Grid>
                     <Grid templateColumns='repeat(2, 1fr)' gap='3' mt='2'>

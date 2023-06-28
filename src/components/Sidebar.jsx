@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Tooltip, Link, Center, Icon } from '@chakra-ui/react';
 import { BsLinkedin, BsGithub, BsPersonLinesFill, BsMailbox } from "react-icons/bs";
+import Resume from '../assets/Resume.pdf';
 
 const Sidebar = () => {
     return (
@@ -20,7 +21,7 @@ const Sidebar = () => {
                 </Link>
             </Tooltip>
             <Tooltip label="Resume" bg='#008080' placement='right'>
-                <Link href='https://en.wikipedia.org/wiki/HTTP_404' isExternal>
+                <Link href={ Resume } isExternal>
                     <Box p='3' bg='#008080'>
                         <Center><Icon as={ BsPersonLinesFill } color='white' bg='#008080' w='10' h='10' /></Center>
                     </Box>

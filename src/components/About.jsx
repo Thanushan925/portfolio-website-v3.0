@@ -1,8 +1,9 @@
 import React from 'react'
 import { useBreakpointValue, Box, AbsoluteCenter, Text, Grid, GridItem, Center, Show } from '@chakra-ui/react'
 import { Icon } from '@chakra-ui/react'
-import { SiHtml5, SiCss3, SiJavascript, SiReact, SiBootstrap, SiChakraui, SiTailwindcss, SiBulma, SiPug, SiVuedotjs, SiCplusplus, SiCoursera, SiPython, SiGo, SiVisualstudiocode, SiGithub, SiGit, SiNetlify, SiIntellijidea, SiMicrosoftoffice } from "react-icons/si";
-import { FaJava } from "react-icons/fa"
+import { SiCplusplus, SiPython, SiJavascript, SiDart, SiGo, SiHtml5, SiCss3, SiFlutter, SiReact, SiNodedotjs, SiVuedotjs, SiBootstrap, SiTailwindcss, SiPostgresql, SiMysql, SiPandas, SiNumpy, SiAlwaysdata, SiVisualstudiocode, SiGit, SiGithub, SiGooglecloud, SiExpertsexchange, SiServerless, SiAndroid } from "react-icons/si";
+import { FaJava } from "react-icons/fa";
+import { DiMsqlServer } from "react-icons/di";
 
 const About = () => {
     // Used to change the sizes of the fonts based on the screen sizes
@@ -15,10 +16,10 @@ const About = () => {
         <Box id='about' position='relative' h='1000px'>
             <AbsoluteCenter w="80%">
                 <Text as='h2' fontSize={ headingFontSize } color='cyan.400' whiteSpace='nowrap'>About Me</Text>
-                <Text fontSize={ paragraphFontSize } color='white'>
-                    I am an undergraduate Computer Science student at Ontario Tech University. I have a passion for creating websites and apps,
-                    whether it's for fun and games, simplifying and automating tasks, or promoting a company's products and services.
-                    Making websites and apps allow me to combine my creativity and problem-solving skills to create unique and innovative solutions.
+                <Text fontSize={ paragraphFontSize } color='white' textAlign='justify'>
+                    I’m a Computer Science student at Ontario Tech University passionate about using software to simplify life through clean,
+                    creative, and practical solutions. From building intuitive web interfaces to developing a 3D-avatar AI chatbot that boosts
+                    productivity and mental well-being, I love combining design, logic, and innovation to make a real impact.
                 </Text>
                 <br></br>
                 <br></br>
@@ -28,111 +29,148 @@ const About = () => {
                     <Grid templateColumns='repeat(11, 1fr)' gap='3' mt='2'>
                         <Center>
                             <GridItem>
-                                <Text fontSize={ listFontSize } color='white'>Web Dev</Text>
+                                <Text fontSize={ listFontSize } color='white' textAlign="center">Programming Languages</Text>
                             </GridItem>
                         </Center>
                         <Center>
                             <GridItem>
-                                <Center><Icon as={ SiHtml5 } color='#F06529' w='16' h='16' /></Center>
-                                <Center><Text fontSize={ listFontSize } color='white'>HTML</Text></Center>
+                                <Center><Icon as={ FaJava } color='#ec2025' w='16' h='16' /></Center>
+                                <Center><Text fontSize={ listFontSize } color='white'>Java</Text></Center>
                             </GridItem>
                         </Center>
                         <Center>
                             <GridItem>
-                                <Center><Icon as={ SiCss3 } color='#2965F1' w='16' h='16' /></Center>
+                                <Center><Icon as={ SiCplusplus } color='#00599d' w='16' h='16' /></Center>
+                                <Center><Text fontSize={ listFontSize } color='white'>C++</Text></Center>
+                            </GridItem>
+                        </Center>
+                        <Center>
+                            <GridItem>
+                                <Center><Icon as={ SiPython } color='#ffd946' w='16' h='16' /></Center>
+                                <Center><Text fontSize={ listFontSize } color='white'>Python</Text></Center>
+                            </GridItem>
+                        </Center>
+                        <Center>
+                            <GridItem>
+                                <Center><Icon as={ SiJavascript } color='#f7e018' w='16' h='16' /></Center>
+                                <Center><Text fontSize={ listFontSize } color='white'>JavaScript</Text></Center>
+                            </GridItem>
+                        </Center>
+                        <Center>
+                            <GridItem>
+                                <Center><Icon as={ SiDart } color='#2cb7f6' w='16' h='16' /></Center>
+                                <Center><Text fontSize={ listFontSize } color='white'>Dart</Text></Center>
+                            </GridItem>
+                        </Center>
+                        <Center>
+                            <GridItem>
+                                <Center><Icon as={ SiGo } color='#00aed9' w='16' h='16' /></Center>
+                                <Center><Text fontSize={ listFontSize } color='white'>Go</Text></Center>
+                            </GridItem>
+                        </Center>
+                    </Grid>
+                    <Grid templateColumns='repeat(11, 1fr)' gap='3' mt='2'>
+                        <Center>
+                            <GridItem>
+                                <Text color='white' textAlign="center">Web & Mobile Dev</Text>
+                            </GridItem>
+                        </Center>
+                        <Center>
+                            <GridItem>
+                                <Center><Icon as={ SiHtml5 } color='#e4522c' w='16' h='16' /></Center>
+                                <Center><Text color='white'>HTML</Text></Center>
+                            </GridItem>
+                        </Center>
+                        <Center>
+                            <GridItem>
+                                <Center><Icon as={ SiCss3 } color='#264de4' w='16' h='16' /></Center>
                                 <Center><Text color='white'>CSS</Text></Center>
                             </GridItem>
                         </Center>
                         <Center>
                             <GridItem>
-                                <Center><Icon as={ SiJavascript } color='#F0DB4F' w='16' h='16' /></Center>
-                                <Center><Text color='white'>JavaScript</Text></Center>
+                                <Center><Icon as={ SiFlutter } color='#44d2fd' w='16' h='16' /></Center>
+                                <Center><Text color='white'>Flutter</Text></Center>
                             </GridItem>
                         </Center>
                         <Center>
                             <GridItem>
-                                <Center><Icon as={ SiReact } color='#88DDED' w='16' h='16' /></Center>
-                                <Center><Text color='white'>ReactJS</Text></Center>
+                                <Center><Icon as={ SiReact } color='#61dbfb' w='16' h='16' /></Center>
+                                <Center><Text color='white'>React.js</Text></Center>
                             </GridItem>
                         </Center>
                         <Center>
                             <GridItem>
-                                <Center><Icon as={ SiBootstrap } color='#563D7C' w='16' h='16' /></Center>
-                                <Center><Text color='white'>Boostrap</Text></Center>
+                                <Center><Icon as={ SiNodedotjs } color='#83cd29' w='16' h='16' /></Center>
+                                <Center><Text color='white'>Node.js</Text></Center>
                             </GridItem>
                         </Center>
                         <Center>
                             <GridItem>
-                                <Center><Icon as={ SiChakraui } color='#4FD1C5' w='16' h='16' /></Center>
-                                <Center><Text color='white'>ChakraUI</Text></Center>
+                                <Center><Icon as={ SiVuedotjs } color='#3fb984' w='16' h='16' /></Center>
+                                <Center><Text color='white'>Vue.js</Text></Center>
                             </GridItem>
                         </Center>
                         <Center>
                             <GridItem>
-                                <Center><Icon as={ SiTailwindcss } color='#38BDF8' w='16' h='16' /></Center>
+                                <Center><Icon as={ SiBootstrap } color='#810af9' w='16' h='16' /></Center>
+                                <Center><Text color='white'>Bootstrap</Text></Center>
+                            </GridItem>
+                        </Center>
+                        <Center>
+                            <GridItem>
+                                <Center><Icon as={ SiTailwindcss } color='#35bef8' w='16' h='16' /></Center>
                                 <Center><Text color='white'>TailwindCSS</Text></Center>
                             </GridItem>
                         </Center>
+                    </Grid>
+                    <Grid templateColumns='repeat(11, 1fr)' gap='3' mt='2'>
                         <Center>
                             <GridItem>
-                                <Center><Icon as={ SiBulma } color='#00D1B2' w='16' h='16' /></Center>
-                                <Center><Text color='white'>Bulma</Text></Center>
+                                <Text color='white' textAlign="center">Databases & Visualization</Text>
                             </GridItem>
                         </Center>
                         <Center>
                             <GridItem>
-                                <Center><Icon as={ SiVuedotjs } color='#42B883' w='16' h='16' /></Center>
-                                <Center><Text color='white'>VueJS</Text></Center>
+                                <Center><Icon as={ SiPostgresql } color='#306792' w='16' h='16' /></Center>
+                                <Center><Text color='white'>PostgreSQL</Text></Center>
                             </GridItem>
                         </Center>
                         <Center>
                             <GridItem>
-                                <Center><Icon as={ SiPug } color='#A86454' w='16' h='16' /></Center>
-                                <Center><Text color='white'>Pug</Text></Center>
+                                <Center><Icon as={ SiMysql } color='#ffa518' w='16' h='16' /></Center>
+                                <Center><Text color='white'>MySQL</Text></Center>
+                            </GridItem>
+                        </Center>
+                        <Center>
+                            <GridItem>
+                                <Center><Icon as={ DiMsqlServer } color='#a91d22' w='16' h='16' /></Center>
+                                <Center><Text color='white'>SQL Server</Text></Center>
+                            </GridItem>
+                        </Center>
+                        <Center>
+                            <GridItem>
+                                <Center><Icon as={ SiPandas } color='#130754' w='16' h='16' /></Center>
+                                <Center><Text color='white'>Pandas</Text></Center>
+                            </GridItem>
+                        </Center>
+                        <Center>
+                            <GridItem>
+                                <Center><Icon as={ SiNumpy } color='#4d77cf' w='16' h='16' /></Center>
+                                <Center><Text color='white'>NumPy</Text></Center>
+                            </GridItem>
+                        </Center>
+                        <Center>
+                            <GridItem>
+                                <Center><Icon as={ SiAlwaysdata } color='#11557c' w='16' h='16' /></Center>
+                                <Center><Text color='white'>Matplotlib</Text></Center>
                             </GridItem>
                         </Center>
                     </Grid>
                     <Grid templateColumns='repeat(11, 1fr)' gap='3' mt='2'>
                         <Center>
                             <GridItem>
-                                <Text color='white'>Software Dev</Text>
-                            </GridItem>
-                        </Center>
-                        <Center>
-                            <GridItem>
-                                <Center><Icon as={ SiCplusplus } color='#1463A3' w='16' h='16' /></Center>
-                                <Center><Text color='white'>C++</Text></Center>
-                            </GridItem>
-                        </Center>
-                        <Center>
-                            <GridItem>
-                                <Center><Icon as={ FaJava } color='#F89820' w='16' h='16' /></Center>
-                                <Center><Text color='white'>Java</Text></Center>
-                            </GridItem>
-                        </Center>
-                        <Center>
-                            <GridItem>
-                                <Center><Icon as={ SiPython } color='#FFDE57' w='16' h='16' /></Center>
-                                <Center><Text color='white'>Python</Text></Center>
-                            </GridItem>
-                        </Center>
-                        <Center>
-                            <GridItem>
-                                <Center><Icon as={ SiCoursera } color='#3646A4' w='16' h='16' /></Center>
-                                <Center><Text color='white'>C</Text></Center>
-                            </GridItem>
-                        </Center>
-                        <Center>
-                            <GridItem>
-                                <Center><Icon as={ SiGo } color='#007D9C' w='16' h='16' /></Center>
-                                <Center><Text color='white'>Go</Text></Center>
-                            </GridItem>
-                        </Center>
-                    </Grid>
-                    <Grid templateColumns='repeat(11, 1fr)' gap='3' mt='2'>
-                        <Center>
-                            <GridItem>
-                                <Text color='white'>Other Tools</Text>
+                                <Text color='white' textAlign="center">Developer Tools</Text>
                             </GridItem>
                         </Center>
                         <Center>
@@ -143,33 +181,38 @@ const About = () => {
                         </Center>
                         <Center>
                             <GridItem>
-                                <Center><Icon as={ SiGithub } color='#F5F5F5' w='16' h='16' /></Center>
-                                <Center><Text color='white'>GitHub</Text></Center>
-                            </GridItem>
-                        </Center>
-                        <Center>
-                            <GridItem>
-                                <Center><Icon as={ SiGit } color='#F34F29' w='16' h='16' /></Center>
+                                <Center><Icon as={ SiGit } color='#f05030' w='16' h='16' /></Center>
                                 <Center><Text color='white'>Git</Text></Center>
                             </GridItem>
                         </Center>
                         <Center>
                             <GridItem>
-                                <Center><Icon as={ SiNetlify } color='#32E6E2' w='16' h='16' /></Center>
-                                <Center><Text color='white'>Netlify</Text></Center>
+                                <Center><Icon as={ SiGithub } color='#ffffff' w='16' h='16' /></Center>
+                                <Center><Text color='white'>GitHub</Text></Center>
                             </GridItem>
                         </Center>
                         <Center>
                             <GridItem>
-                                <Center><Icon as={ SiIntellijidea } color='#FE2D5D' w='16' h='16' /></Center>
-                                <Center><Text color='white'>IntelliJ IDEA</Text></Center>
+                                <Center><Icon as={ SiGooglecloud } color='#0dbac8' w='16' h='16' /></Center>
+                                <Center><Text color='white'>SharePoint</Text></Center>
                             </GridItem>
                         </Center>
-
                         <Center>
                             <GridItem>
-                                <Center><Icon as={ SiMicrosoftoffice } color='#F25022' w='16' h='16' /></Center>
-                                <Center><Text color='white'>MS Office</Text></Center>
+                                <Center><Icon as={ SiExpertsexchange } color='#ff7008' w='16' h='16' /></Center>
+                                <Center><Text color='white'>Nintex</Text></Center>
+                            </GridItem>
+                        </Center>
+                        <Center>
+                            <GridItem>
+                                <Center><Icon as={ SiServerless } color='#ffb900' w='16' h='16' /></Center>
+                                <Center><Text color='white'>SSMS</Text></Center>
+                            </GridItem>
+                        </Center>
+                        <Center>
+                            <GridItem>
+                                <Center><Icon as={ SiAndroid } color='#92c657' w='16' h='16' /></Center>
+                                <Center><Text color='white'>Android Studio</Text></Center>
                             </GridItem>
                         </Center>
                     </Grid>
@@ -179,31 +222,41 @@ const About = () => {
                     <Grid templateColumns='repeat(2, 1fr)' gap='3' mt='2'>
                         <Center>
                             <GridItem>
-                                <Text fontSize={ listFontSize } color='white'>Web Dev</Text>
+                                <Text fontSize={ listFontSize } color='white'>Programming Languages</Text>
                             </GridItem>
                         </Center>
                         <GridItem>
-                            <Text fontSize={ listFontSize } color='white'>HTML, CSS, JavaScript, ReactJS, Bootstrap, ChakraUI, TailwindCSS, Bulma, VueJS, Pug</Text>
+                            <Text fontSize={ listFontSize } color='white'>Java, C++, Python, JavaScript, Dart, Go, SQL</Text>
                         </GridItem>
                     </Grid>
                     <Grid templateColumns='repeat(2, 1fr)' gap='3' mt='2'>
                         <Center>
                             <GridItem>
-                                <Text fontSize={ listFontSize } color='white'>Software Dev</Text>
+                                <Text fontSize={ listFontSize } color='white'>Web & Mobile Development</Text>
                             </GridItem>
                         </Center>
                         <GridItem>
-                            <Text fontSize={ listFontSize } color='white'>C++, Java, Python, C, Go</Text>
+                            <Text fontSize={ listFontSize } color='white'>HTML/CSS, Flutter, React.js, Node.js, Vue.js, Bootstrap, Tailwind CSS</Text>
                         </GridItem>
                     </Grid>
                     <Grid templateColumns='repeat(2, 1fr)' gap='3' mt='2'>
                         <Center>
                             <GridItem>
-                                <Text fontSize={ listFontSize } color='white'>Other Tools</Text>
+                                <Text fontSize={ listFontSize } color='white'>Databases & Visualization</Text>
                             </GridItem>
                         </Center>
                         <GridItem>
-                            <Text fontSize={ listFontSize } color='white'>VS Code, GitHub, Git, Netlify, IntelliJ IDEA, MS Office</Text>
+                            <Text fontSize={ listFontSize } color='white'>PostgreSQL, MySQL, SQL Server, Pandas, NumPy, Matplotlib</Text>
+                        </GridItem>
+                    </Grid>
+                    <Grid templateColumns='repeat(2, 1fr)' gap='3' mt='2'>
+                        <Center>
+                            <GridItem>
+                                <Text fontSize={ listFontSize } color='white'>Developer Tools</Text>
+                            </GridItem>
+                        </Center>
+                        <GridItem>
+                            <Text fontSize={ listFontSize } color='white'>VS Code, Git, GitHub, SharePoint, Nintex, SQL Server Management Studio, Android Studio</Text>
                         </GridItem>
                     </Grid>
                 </Show>

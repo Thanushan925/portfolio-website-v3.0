@@ -63,6 +63,7 @@ const Projects = () => {
                                 </Text>
                             </CardBody>
                             <CardFooter>
+                                <Link href='https://ltfitnesstracker.online/' isExternal><Button variant='outline' colorScheme='cyan' mx='1'>Demo</Button></Link>
                                 <Link href='https://github.com/Thanushan925/LT-Fitness-Application' isExternal><Button variant='outline' colorScheme='cyan' mx='1'>Code</Button></Link>
                             </CardFooter>
                         </Stack>

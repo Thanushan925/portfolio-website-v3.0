@@ -9,7 +9,7 @@ const Home = () => {
 
     // Used to carry out the 'Typing Effect' for the subtitle
     const [displayedText, setDisplayedText] = useState('');
-    const subtitleText = 'Aspiring Software/Web Developer';
+    const subtitleText = 'Software Developer';
 
     useEffect(() => {
         let intervalID;
